@@ -1,0 +1,21 @@
+{
+  "name": "operya-agents",
+  "displayName": "Operya Agents",
+  "version": "0.1.0",
+  "description": "Use scoped Operya Agents GraphQL and HTTP endpoints from Claude Code or local Cowork.",
+  "author": {
+    "name": "Operya AI",
+    "url": "https://operya.ai"
+  },
+  "repository": "https://github.com/operya-ai/operya_plugin",
+  "license": "MIT",
+  "userConfig": {
+    "agent_token": {
+      "type": "string",
+      "title": "Operya agent key",
+      "description": "A scoped Operya Agents API key for the vertical you want to access",
+      "sensitive": true,
+      "required": true
+    }
+  }
+}
