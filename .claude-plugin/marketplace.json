@@ -1,0 +1,18 @@
+{
+  "name": "operya-ai",
+  "description": "Operya integrations for Claude",
+  "owner": {
+    "name": "Operya AI",
+    "url": "https://operya.ai"
+  },
+  "plugins": [
+    {
+      "name": "operya-agents",
+      "source": {
+        "source": "github",
+        "repo": "operya-ai/operya_plugin"
+      },
+      "description": "Use scoped Operya Agents API endpoints from Claude Code or local Cowork."
+    }
+  ]
+}

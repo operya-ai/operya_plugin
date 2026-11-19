@@ -4,7 +4,7 @@ This plugin connects Claude Code and local Cowork sessions to the [Operya Agents
 
 ## Install and configure
 
-Use Claude Code's plugin marketplace flow with this repository, or test a checkout with `claude --plugin-dir .`. In the plugin's **Configure options**, enter a scoped Operya agent key. A Hiring key, Sales key, Marketing key, HR key, or Dispatch key selects its own API surface. Obtain the key in the applicable Operya product; the plugin does not create credentials. Node.js 20 or later is required where the local MCP server runs.
+Add the repository as a Claude Code marketplace with `claude plugin marketplace add operya-ai/operya_plugin`, then install with `claude plugin install operya-agents@operya-ai`. To test a checkout without installing, run `claude --plugin-dir .`. In the plugin's **Configure options**, enter a scoped Operya agent key. A Hiring key, Sales key, Marketing key, HR key, or Dispatch key selects its own API surface. Obtain the key in the applicable Operya product; the plugin does not create credentials. Node.js 20 or later is required where the local MCP server runs.
 
 The `userConfig.agent_token` option is marked sensitive. Claude Code injects it into the local MCP process as `OPERYA_AGENT_TOKEN`; the bridge sends it only as a Bearer token to the Operya gateway. Do not commit keys or put them in prompts.
 
